@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 1%;
+    position: fixed;
+
+    &__logo {
+        width: 12%;
+    }
+
+    &__nav {
+        width: 35%;
+        display: flex;
+    }
+    &__nav--link {
+        margin: 0% 5%; 
+        text-decoration: none;
+    }
+
+    &__language {
+        width: 8%;
+    }
+}
+
+.lang {
+
+    &__link {
+        color: white;
+    }
+}

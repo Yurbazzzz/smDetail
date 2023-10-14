@@ -1,0 +1,25 @@
+* {  
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: black;
+}
+
+@mixin text-color {
+    color: white;
+}
+
+@mixin title-color {
+    color: red;
+}
+
+.link {
+    color: #F5F1E999;
+    opacity: 0,7;
+    transition: all 1s;
+}
+.link:hover{
+    transition: all 0.5s;
+    opacity: 1;
+    color: white;
+}
