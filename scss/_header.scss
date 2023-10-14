@@ -1,9 +1,9 @@
 .header {
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0% 1%;
+    padding: 0% 1% 0% 1%;
     position: fixed;
 
     &__logo {
@@ -20,13 +20,26 @@
     }
 
     &__language {
-        width: 8%;
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__language--link {
+        width: 100%;
+        color: white;
+        
+    }
+    &__language:hover {
+        width: 10%;
+        height: 30%;
+        
+    }
+    &__language:hover {
+        
     }
 }
 
-.lang {
-
-    &__link {
-        color: white;
-    }
+.active {
+    display:block;
 }

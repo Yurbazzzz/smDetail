@@ -3,7 +3,9 @@
 }
 
 body {
+  position: relative;
   background-color: black;
+  margin: 0%;
 }
 
 .link {
@@ -21,7 +23,7 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +33,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0% 1%;
+  padding: 0% 1% 0% 1%;
   position: fixed;
 }
 .header__logo {
@@ -48,9 +50,24 @@ body {
   text-decoration: none;
 }
 .header__language {
-  width: 8%;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
-
-.lang__link {
+.header__language--link {
+  width: 100%;
   color: white;
+}
+.header__language:hover {
+  width: 10%;
+  height: 30%;
+}
+.active {
+  display: block;
 }
