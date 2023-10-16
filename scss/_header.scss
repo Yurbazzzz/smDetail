@@ -4,7 +4,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0% 1% 0% 1%;
-    position: fixed;
+    // position: fixed;
+    background-color: black;
 
     &__logo {
         width: 12%;
@@ -28,18 +29,21 @@
     &__language--link {
         width: 100%;
         color: white;
-        
+        display: none;
+        margin: 5%;
+        background: none;
+        border: none;
+        opacity: 0.7;
+        transition: all 1s;
+        text-decoration: none;
     }
-    &__language:hover {
-        width: 10%;
-        height: 30%;
-        
-    }
-    &__language:hover {
-        
+
+    &__language:hover .header__language--link {
+        display: block;    
     }
 }
 
 .active {
     display:block;
 }
+

@@ -1,0 +1,26 @@
+.previe {
+    width: 100%;
+    background-image: url(../img/work1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    &__container {
+        padding: 10% 20% 5% 15%;
+    }
+
+    &__title {
+        @include title-color;
+    }
+
+    &__subtitle {
+        @include text-color;
+    }
+
+    &__btn {
+        padding: 1% 5%;
+        background-color: black;
+        @include text-color;
+        border: none;
+    }
+}

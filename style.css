@@ -34,7 +34,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0% 1% 0% 1%;
-  position: fixed;
+  background-color: black;
 }
 .header__logo {
   width: 12%;
@@ -63,11 +63,42 @@ body {
 .header__language--link {
   width: 100%;
   color: white;
+  display: none;
+  margin: 5%;
+  background: none;
+  border: none;
+  opacity: 0.7;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  text-decoration: none;
 }
-.header__language:hover {
-  width: 10%;
-  height: 30%;
+.header__language:hover .header__language--link {
+  display: block;
 }
+
 .active {
   display: block;
+}
+
+.previe {
+  width: 100%;
+  background-image: url(../img/work1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.previe__container {
+  padding: 10% 20% 5% 15%;
+}
+.previe__title {
+  color: red;
+}
+.previe__subtitle {
+  color: white;
+}
+.previe__btn {
+  padding: 1% 5%;
+  background-color: black;
+  color: white;
+  border: none;
 }
