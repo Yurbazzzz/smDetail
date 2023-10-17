@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207332070-1"></script>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -41,7 +46,13 @@
         </section>
 
         <section class="about">
+            <h2 class="about__title">Welcome to Our <br> Place</h2>
 
+            <div class="about__container">
+                <p class="about__container--content">
+                    At Our Place, we believe in the power of home-cooking to bring people together. Our collections are new heirlooms from the cultures and places that make up the fabric of the modern multi-ethnic kitchen. We design thoughtfully, source ethically, and produce sustainably because what we make is connected to one another and the earth we share.
+                </p>
+            </div>
         </section>
 
         <section class="gallery">
@@ -49,6 +60,64 @@
         </section>
 
         <section class="products">
+            <h3 class="products__title">Production what we use</h3>
+
+            <div class="slider">
+                <div class="slide">
+                    <div class="slide__img--container">
+                        <img class="slide__img" src="./img/wax.png" alt="wax">
+                    </div>
+                   
+                    <h6 class="slide__title">Wax</h6>
+                    <p class="slide__subtitle">This wax will give your car's paint finish for the most durable protection and a superior shine.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide__img--container">
+                        <img class="slide__img" src="./img/tiregel.png" alt="Tiregel">
+                    </div>
+
+                    <h6 class="slide__title">Tiregel</h6>
+                    <p class="slide__subtitle">Endurance-ring Polish is a quality appreciated by car enthusiasts popularity in.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide__img--container">
+                        <img class="slide__img prewash" src="./img/prewash.png" alt="prewash">
+                    </div>
+
+                    <h6 class="slide__title">Prewash</h6>
+                    <p class="slide__subtitle">True enthusiasts a premium detergent frother setups.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide__img--container">
+                        <img class="slide__img" src="./img/polishing.png" alt="polishing">
+                    </div>
+
+                    <h6 class="slide__title">Polishing</h6>
+                    <p class="slide__subtitle">Ultimate Compound is a new revolutionary product abrasives and polishing agents among them.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide__img--container">
+                        <img class="slide__img interior" src="./img/interior.png" alt="interior">
+                    </div>
+
+                    <h6 class="slide__title">Interior</h6>
+                    <p class="slide__subtitle">Meguiar Ultimate Interior Detailer is a real 2in1 product. Clean and protect at the same time.</p>
+                </div>
+
+                <div class="slide">
+                    <div class="slide__img--container">
+                        <img class="slide__img" src="./img/glasscleaner.png" alt="glasscleaner">
+                    </div>
+
+                    <h6 class="slide__title">Glasscleaner</h6>
+                    <p class="slide__subtitle">Glass cleaner, which is designed to eliminate the worst sort of dirt and pitch.</p>
+                </div>
+
+            </div>
 
         </section>
 
@@ -64,5 +133,9 @@
     <footer class="footer">
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

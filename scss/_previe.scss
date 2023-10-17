@@ -6,11 +6,13 @@
     color: white;
 
     &__container {
-        padding: 10% 20% 5% 15%;
+        padding: 13% 20% 13% 15%;
     }
 
     &__title {
         @include title-color;
+        @include title-font;
+        font-size: 55px;
     }
 
     &__subtitle {
@@ -18,7 +20,8 @@
     }
 
     &__btn {
-        padding: 1% 5%;
+        padding: 2% 10%;
+        font-size: 13px;
         background-color: black;
         @include text-color;
         border: none;

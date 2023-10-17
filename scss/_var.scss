@@ -12,7 +12,11 @@ body {
 }
 
 @mixin title-color {
-    color: red;
+    color: white;
+}
+
+@mixin title-font {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .link {
