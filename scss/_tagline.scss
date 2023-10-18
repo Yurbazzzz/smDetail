@@ -1,0 +1,41 @@
+.tagline {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+
+    &__content {
+        padding: 5% 1%;
+    }
+
+    &__content--title {
+        margin: 15% 0%;
+    }
+
+    &__content--link {
+        border: 2px solid white;
+        padding: 4% 15%;
+        opacity: 0.6;
+        color: white;
+        text-decoration: none;
+        transition: all 1s;
+    }
+    &__content--link:hover {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+    &__img--left {
+        width: 33%;
+        background-image: url(../img/work2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__img--right {
+        width: 33%;
+        background-image: url(../img/worker.jpg);
+        background-size: cover;
+        background-position: 0% 60%;
+    }
+
+}

@@ -4,8 +4,7 @@
     padding: 3% 5%;
 
     &__title {
-        @include title-color;
-        @include title-font;
+        @include title;
         margin: 0%;
         text-align: center;
         font-size: 45px;
@@ -49,7 +48,7 @@
 
         font-size: 25px;
 
-        @include title-color;
+        @include title;
 
     }
     &__subtitle {

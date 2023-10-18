@@ -10,20 +10,19 @@
     }
 
     &__title {
-        @include title-color;
-        @include title-font;
+        @include title;
         font-size: 55px;
     }
 
     &__subtitle {
-        @include text-color;
+        color: white;
     }
 
     &__btn {
         padding: 2% 10%;
         font-size: 13px;
         background-color: black;
-        @include text-color;
+        color: white;
         border: none;
     }
 }
