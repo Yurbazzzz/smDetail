@@ -82,7 +82,8 @@ body {
 
 .previe {
   width: 100%;
-  background-image: url(../img/work1.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.313)), to(rgba(0, 0, 0, 0.8))), url(../img/work1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.313), rgba(0, 0, 0, 0.8)), url(../img/work1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -97,13 +98,16 @@ body {
 }
 .previe__subtitle {
   color: white;
+  font-size: 15px;
+  line-height: 0.5;
+  letter-spacing: 2px;
 }
 .previe__btn {
+  border: 1px solid rgb(0, 0, 0);
   padding: 2% 10%;
   font-size: 13px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
-  border: none;
 }
 
 .about {
@@ -311,14 +315,110 @@ body {
   background-position: 0% 60%;
 }
 
+.map {
+  background-color: #0C0C0C;
+  padding: 2%;
+}
 .map__title {
   color: white;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-size: 45px;
+  margin: 0%;
 }
 .map__container {
   width: 80%;
   height: 450px;
   margin: 2% 10% 4%;
+}
+
+.contact {
+  background-color: rgba(6, 6, 6, 0.6823529412);
+  color: white;
+  padding: 3%;
+}
+.contact__title {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 45px;
+  margin: 0% 0% 3%;
+  text-align: center;
+}
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.contact__block {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contact__phone {
+  text-align: center;
+}
+.contact__btn {
+  width: 50%;
+  border: 2px solid white;
+  padding: 3% 7%;
+  opacity: 0.6;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background: none;
+}
+.contact__btn:hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact__social {
+  text-align: center;
+}
+.contact__link {
+  margin: 3%;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__link:hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact__icon {
+  fill: white;
+  margin-right: 10px;
+}
+
+.footer {
+  padding: 1%;
+}
+.footer__title {
+  color: white;
+  text-align: center;
+  font-size: 20px;
 }

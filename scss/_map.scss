@@ -1,9 +1,12 @@
 .map {
+    background-color: #0C0C0C;
+    padding: 2%;
 
     &__title {
         @include title;
         text-align: center;
         font-size: 45px;
+        margin: 0%;
     }
 
     &__container {

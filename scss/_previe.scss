@@ -1,6 +1,8 @@
 .previe {
     width: 100%;
-    background-image: url(../img/work1.jpg);
+    background: 
+		linear-gradient(rgba(0, 0, 0, 0.313), rgba(0, 0, 0, 0.8)), 
+		url(../img/work1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -16,13 +18,16 @@
 
     &__subtitle {
         color: white;
+        font-size: 15px;
+        line-height: 0.5;
+        letter-spacing: 2px;
     }
 
     &__btn {
+        border: 1px solid rgb(0, 0, 0);
         padding: 2% 10%;
         font-size: 13px;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         color: white;
-        border: none;
     }
 }
