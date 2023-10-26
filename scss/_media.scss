@@ -8,6 +8,16 @@
     .previe__subtitle {
         font-size: 11px;
     }
+    .about__title {
+        font-size: 35px;
+    }
+    .about__container--content {
+        font-size: 14px;
+    }
+    .gallery__container {
+        width: 80%;
+        margin: 0% 10%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -34,7 +44,43 @@
     .previe__btn {
         padding: 3% 13%;
     }
+    .about {
+        display: flex;
+        flex-direction: column;
 
+        &__title {
+            width: 100%;
+        }
+        &__container{
+            width: 70%;
+            margin: 0% 15%;
+        }
+    }
+    .gallery__title {
+        font-size: 35px;
+    }
+    .gallery__top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .img1, .img2, .img3, .img4, .img5  {
+        width: 45%;
+        margin: 2%;
+    }
+    .prise__title {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .gallery__top {
+        display: flex;
+    }
+    .img1, .img2, .img3, .img4, .img5  {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 540px){
@@ -58,8 +104,32 @@
         font-size: 10px;
     }
     .previe__btn {
-        padding: 3% 15%;
+        padding: 4% 17%;
         margin-top: 4%;
+    }
+    .about__title {
+        font-size: 30px;
+    }
+    .about__container--content {
+        font-size: 13px;
+    }
+    .gallery__title {
+        font-size: 30px;
+    }
+    .gallery__bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+    }
+    .img1, .img2, .img3, .img4, .img5  {
+        width: 100%;
+        margin: 2% 0%;
+    }
+    .prise__title {
+        font-size: 30px;
+    }
+    .prise__item, .prise__amount {
+        font-size: 15px;
     }
 }
 
@@ -74,8 +144,15 @@
     .menu__btn {
         top: 40px;
     }
-
     .previe__container {
         padding: 23% 20% 13% 15%;
     }
+    .about__container {
+        width: 80%;
+        margin: 0% 10%;
+    }
+    .prise__item, .prise__amount {
+        font-size: 12px;
+    }
+    
 }
