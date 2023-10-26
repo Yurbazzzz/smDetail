@@ -662,6 +662,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .hover {
+    opacity: 1;
+  }
   .img1, .img2, .img3, .img4, .img5 {
     width: 45%;
     margin: 2%;
