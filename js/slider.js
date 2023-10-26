@@ -5,4 +5,5 @@ $('.slider ').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 1500,
+    useCSS: true,
   });

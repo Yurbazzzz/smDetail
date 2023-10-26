@@ -140,17 +140,182 @@ body {
 }
 .about__container--content {
   font-size: 16px;
-  color: white;
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.844);
 }
 
+.gallery {
+  margin-bottom: 3%;
+}
 .gallery__title {
   color: white;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 45px;
   text-align: center;
 }
+.gallery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 0% 20%;
+}
+.gallery__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery__bottom {
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
+.img1 {
+  background-image: url(../img/galery1.jpg);
+  width: 32%;
+  height: 400px;
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url(../img/galery2.jpg);
+  width: 32%;
+  height: 400px;
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url(../img/galery3.jpg);
+  width: 32%;
+  height: 400px;
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url(../img/galery4.jpg);
+  width: 32%;
+  height: 400px;
+  background-size: cover;
+}
+
+.img5 {
+  background-image: url(../img/galery5.jpg);
+  width: 66%;
+  height: 400px;
+  background-size: cover;
+}
+
+.hover {
+  opacity: 0.6;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.hover:hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
 .prise {
   color: white;
   padding: 1% 5% 5%;
@@ -512,6 +677,17 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__nav--link {
+    font-size: 13px;
+  }
+  .previe__title {
+    font-size: 45px;
+  }
+  .previe__subtitle {
+    font-size: 11px;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__language {
     display: none;
@@ -528,6 +704,13 @@ body {
   .header__logo {
     width: 15%;
   }
+  .previe__title {
+    font-size: 30px;
+    margin-bottom: 10%;
+  }
+  .previe__btn {
+    padding: 3% 13%;
+  }
 }
 @media screen and (max-width: 540px) {
   .header {
@@ -539,6 +722,19 @@ body {
   .menu__btn {
     top: 35px;
   }
+  .previe__container {
+    padding: 15% 20% 13% 15%;
+  }
+  .previe__title {
+    font-size: 25px;
+  }
+  .previe__subtitle {
+    font-size: 10px;
+  }
+  .previe__btn {
+    padding: 3% 15%;
+    margin-top: 4%;
+  }
 }
 @media screen and (max-width: 425px) {
   .header {
@@ -549,5 +745,8 @@ body {
   }
   .menu__btn {
     top: 40px;
+  }
+  .previe__container {
+    padding: 23% 20% 13% 15%;
   }
 }
