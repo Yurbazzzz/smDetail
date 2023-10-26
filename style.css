@@ -364,16 +364,15 @@ body {
   margin: 15% 0%;
 }
 .tagline__content--link {
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.6);
   padding: 4% 15%;
-  opacity: 0.6;
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 .tagline__content--link:hover {
-  opacity: 1;
+  color: rgb(255, 255, 255);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -399,7 +398,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-size: 45px;
-  margin: 0%;
+  margin: 5% 0%;
 }
 .map__container {
   width: 80%;
@@ -605,6 +604,30 @@ body {
     width: 80%;
     margin: 0% 10%;
   }
+  .products__title {
+    font-size: 35px;
+  }
+  .slide__subtitle {
+    width: 90%;
+    margin: 0% 5%;
+  }
+  .tagline__content {
+    padding: 3% 1%;
+  }
+  .tagline__content--title, .tagline__content--link {
+    font-size: 14px;
+  }
+  .map__title {
+    font-size: 35px;
+  }
+  .map__container {
+    width: 90%;
+    height: 450px;
+    margin: 2% 5% 4%;
+  }
+  .contact__title {
+    font-size: 35px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__language {
@@ -672,6 +695,21 @@ body {
   .prise__title {
     font-size: 35px;
   }
+  .products__title {
+    font-size: 30px;
+  }
+  .slide__title {
+    font-size: 20px;
+  }
+  .slide__subtitle {
+    font-size: 14px;
+  }
+  .map__container {
+    height: 400px;
+  }
+  .contact__btn {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 600px) {
   .gallery__top {
@@ -681,6 +719,29 @@ body {
   }
   .img1, .img2, .img3, .img4, .img5 {
     width: 90%;
+  }
+  .slide__subtitle {
+    font-size: 11px;
+  }
+  .tagline {
+    background-image: url(../img/car.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .tagline__content--title, .tagline__content--link {
+    font-size: 12px;
+  }
+  .tagline__img--left, .tagline__img--right {
+    display: none;
+  }
+  .tagline__content {
+    background-color: black;
+    width: 60%;
+    margin: 0% 20%;
+    padding: 5% 1%;
+  }
+  .contact__btn {
+    width: 70%;
   }
 }
 @media screen and (max-width: 540px) {
@@ -735,6 +796,18 @@ body {
   .prise__item, .prise__amount {
     font-size: 15px;
   }
+  .slide__title {
+    font-size: 12px;
+  }
+  .slide__subtitle {
+    font-size: 8px;
+  }
+  .map__title {
+    font-size: 30px;
+  }
+  .contact__title {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 425px) {
   .header {
@@ -755,5 +828,28 @@ body {
   }
   .prise__item, .prise__amount {
     font-size: 12px;
+  }
+  .tagline__content--title, .tagline__content--link {
+    font-size: 10px;
+  }
+  .contact__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__block {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slide__title {
+    font-size: 10px;
+  }
+  .slide__subtitle {
+    font-size: 6px;
   }
 }
