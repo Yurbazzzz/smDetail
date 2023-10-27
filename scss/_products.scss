@@ -82,6 +82,16 @@
     margin: 0% 10%;
 }
 
-// .slick-track, .slick-list, .draggable, .slider, .slick-initialized, .slick-slider, .slide, .slick-slide {
-//     opacity: 1;
-//  }
+.stuff-mobile {
+    display: none;
+}
+.card {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+.stuff-mobile--line {
+    display: flex;
+    justify-content: space-around;
+}

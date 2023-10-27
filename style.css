@@ -347,6 +347,30 @@ body {
   margin: 0% 10%;
 }
 
+.stuff-mobile {
+  display: none;
+}
+
+.card {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3%;
+}
+
+.stuff-mobile--line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .tagline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -733,6 +757,18 @@ body {
   }
   .products__title {
     font-size: 30px;
+  }
+  .stuff-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider {
+    display: none;
   }
   .slide__title {
     font-size: 20px;

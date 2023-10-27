@@ -131,6 +131,13 @@
     .products__title {
         font-size: 30px;
     }
+    .stuff-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider {
+        display: none;
+    }
     .slide__title {
         font-size: 20px;
     }
