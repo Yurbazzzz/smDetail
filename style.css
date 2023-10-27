@@ -654,7 +654,7 @@ body {
     border-bottom: 3px solid white;
   }
   .menu__link {
-    width: 10%;
+    width: 15%;
     text-decoration: none;
   }
   .menu__nav {
@@ -790,6 +790,13 @@ body {
   .menu__btn {
     top: 35px;
   }
+  .menu__link {
+    width: 33%;
+    text-align: center;
+  }
+  .header__nav--link {
+    font-size: 17px;
+  }
   .previe__container {
     padding: 15% 20% 13% 15%;
   }
@@ -854,6 +861,12 @@ body {
   }
   .menu__btn {
     top: 40px;
+  }
+  .menu__link {
+    font-size: 13px;
+  }
+  .header__nav--link {
+    font-size: 13px;
   }
   .previe__container {
     padding: 23% 20% 13% 15%;
