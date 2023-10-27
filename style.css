@@ -669,7 +669,7 @@ body {
   }
   .header__nav--link {
     text-align: end;
-    margin: 2%;
+    margin: 4%;
     font-size: 20px;
   }
   .active {
@@ -796,6 +796,7 @@ body {
   }
   .header__nav--link {
     font-size: 17px;
+    margin: 5%;
   }
   .previe__container {
     padding: 15% 20% 13% 15%;
