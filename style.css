@@ -447,16 +447,17 @@ body {
 }
 .contact__btn {
   width: 50%;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   padding: 3% 7%;
-  opacity: 0.6;
   text-decoration: none;
   -webkit-transition: all 1s;
   transition: all 1s;
   background: none;
 }
 .contact__btn:hover {
-  opacity: 1;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -470,10 +471,9 @@ body {
 .contact__link {
   margin: 3%;
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
   -webkit-transition: all 1s;
   transition: all 1s;
-  opacity: 0.7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,7 +482,7 @@ body {
           align-items: center;
 }
 .contact__link:hover {
-  opacity: 1;
+  color: rgb(255, 255, 255);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -568,7 +568,7 @@ body {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 70%;
+  width: 50%;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -638,6 +638,42 @@ body {
   }
   .hamburger-menu {
     display: block;
+    padding: 2%;
+  }
+  .menu__lang {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 5% 0%;
+    margin-bottom: 5%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+  }
+  .menu__link {
+    width: 10%;
+    text-decoration: none;
+  }
+  .menu__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0% 3%;
+  }
+  .header__nav--link {
+    text-align: end;
+    margin: 2%;
+    font-size: 20px;
+  }
+  .active {
+    color: white;
   }
   .header {
     position: fixed;

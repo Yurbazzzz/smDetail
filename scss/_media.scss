@@ -53,7 +53,36 @@
     }
     .hamburger-menu {
         display: block;
-      }
+        padding: 2%;
+    }
+    .menu {
+        &__lang {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 5% 0%;
+            margin-bottom: 5%;
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+        }
+        &__link {
+            width: 10%;
+            text-decoration: none;
+        }
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            margin: 0% 3%;
+        }
+    }
+    .header__nav--link {
+        text-align: end;
+        margin: 2%;
+        font-size: 20px;
+    }
+    .active {
+        color: white;
+    }
     .header {
         position: fixed;
 
