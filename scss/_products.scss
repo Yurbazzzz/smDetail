@@ -51,16 +51,7 @@
         @include title;
 
     }
-    &__subtitle {
-        text-align: center;
-        width: 50%;
-        margin: 0% 25%;
-        color: white;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 .slide:hover {
@@ -84,4 +75,13 @@
 .stuff-mobile--line {
     display: flex;
     justify-content: space-around;
-}
+}    // &__subtitle {
+    //     text-align: center;
+    //     width: 50%;
+    //     margin: 0% 25%;
+    //     color: white;
+
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
